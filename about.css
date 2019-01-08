@@ -9,6 +9,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
+  background-color: #F2F2F2;
   
 
  
@@ -100,6 +101,7 @@ padding: 2rem;
 
 h1, h3{
   font-family: 'Anton', 'Lato';
+  letter-spacing: .1rem;
 
 }
 
@@ -193,7 +195,7 @@ li > h3{
 
 }
 .social {
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 
 }
 
