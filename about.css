@@ -9,7 +9,7 @@
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: #F2F2F2;
+  background-color: #080806;
   
 
  
@@ -50,7 +50,7 @@ a{
   margin-right: 3rem;
   margin-left: 3rem;
   text-decoration: none;
-  color: #262626;
+  color: #e4e4e4;
   letter-spacing: .1rem;
   z-index: 2;
   font-size: 14px;
@@ -60,13 +60,6 @@ a{
 
 
 
- a:visited {
-  font-family: 'Lato', sans-serif;
-  border-bottom: 3px solid black;
-  color: #262626;
-  
- 
-}
 
 a:hover {
   text-decoration: none;
@@ -102,6 +95,7 @@ padding: 2rem;
 h1, h3{
   font-family: 'Anton', 'Lato';
   letter-spacing: .1rem;
+  color: #e4ded4;
 
 }
 
