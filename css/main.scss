@@ -313,7 +313,10 @@ align-self: center;
   body {
     
     overflow-x: hidden;
-    
+    .header-flex {
+      height: 0;
+      padding: 3rem;
+    }
    
     .menu {
       display: flex;
