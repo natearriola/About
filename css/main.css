@@ -338,6 +338,10 @@ body footer .pgnum span {
   body {
     overflow-x: hidden;
   }
+  body .header-flex {
+    height: 0;
+    padding: 3rem;
+  }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
