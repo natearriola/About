@@ -334,7 +334,7 @@ body footer .pgnum span {
   }
 }
 
-@media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1024px) and (max-device-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
     overflow-x: hidden;
   }
@@ -350,6 +350,9 @@ body footer .pgnum span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  body .img-header img {
+    max-width: 60%;
   }
   body .title {
     font-size: 3.5rem;
@@ -402,25 +405,8 @@ body footer .pgnum span {
     -ms-grid-rows: 80vh;
         grid-template-rows: 80vh;
   }
-  body .img-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   body .img-header img {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    max-width: 90%;
   }
   body .content-container {
     padding: 2rem;
