@@ -350,27 +350,9 @@ body footer .pgnum span {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-right: 4rem;
   }
   body .title {
     font-size: 3.5rem;
-  }
-  body .img-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 8rem;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  body .img-container img {
-    max-width: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
   body .content-container {
     padding: 5rem;
