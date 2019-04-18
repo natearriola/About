@@ -317,28 +317,13 @@ body footer .pgnum span {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    margin-right: 3rem;
   }
   body .header-flex {
     height: 0;
     padding: 3rem;
   }
-  body .img-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 8rem;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  body .img-container img {
-    max-width: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+  body .title {
+    font-size: 48px;
   }
   body .content-container {
     padding: 2rem;
@@ -351,7 +336,6 @@ body footer .pgnum span {
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
-    height: 100vh;
     overflow-x: hidden;
   }
   body .menu {

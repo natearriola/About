@@ -284,7 +284,7 @@ align-self: center;
       display: flex;
       justify-content: center;
       width: 100%;
-      margin-right: 3rem;
+      
     }
 
     
@@ -294,17 +294,10 @@ align-self: center;
       padding: 3rem;
     }
 
-    .img-container {
-      display: flex;
-      justify-content: center;
-      padding: 8rem;
-      padding-top: 0;
-      padding-bottom: 0;
-      img {
-        max-width: 100%;
-        align-self: center;
-      }
+    .title{
+      font-size: 48px;
     }
+   
 
     .content-container {
       padding: 2rem;
@@ -318,8 +311,9 @@ align-self: center;
 
 @media screen and (min-device-width: 1024px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   body {
-    height: 100vh;
+    
     overflow-x: hidden;
+    
    
     .menu {
       display: flex;
@@ -389,6 +383,8 @@ align-self: center;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 80vh;
+      
+      
     }
     .img-header {
       display: flex;
@@ -397,7 +393,7 @@ align-self: center;
       align-items: center;
     
       img {
-       
+        
         align-self: center;
       }
     }
