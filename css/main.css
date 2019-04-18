@@ -402,8 +402,8 @@ body footer .pgnum span {
     font-size: 16px;
   }
   body .logo img {
-    width: 60px;
     height: 50px;
+    width: 60px;
   }
   body .ham {
     width: 35px;
@@ -485,6 +485,10 @@ body footer .pgnum span {
   }
   body .ham {
     width: 35px;
+  }
+  body .logo img {
+    height: 50px;
+    width: 60px;
   }
   body .grid {
     display: -ms-grid;
@@ -570,6 +574,10 @@ body footer .pgnum span {
   }
   body .ham {
     width: 35px;
+  }
+  body .logo img {
+    height: 50px;
+    width: 60px;
   }
   body .title {
     font-size: 100px;

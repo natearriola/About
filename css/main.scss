@@ -372,8 +372,8 @@ align-self: center;
     }
 
     .logo img {
-      width: 60px;
       height: 50px;
+      width: 60px;
     }
     .ham {
       width: 35px;
@@ -441,7 +441,10 @@ align-self: center;
     .ham {
       width: 35px;
     }
-   
+    .logo img {
+      height: 50px;
+      width: 60px;
+    }
 
     .grid{
       display: grid;
@@ -516,7 +519,10 @@ align-self: center;
      .ham {
        width: 35px;
      }
-    
+     .logo img {
+      height: 50px;
+      width: 60px;
+    }
      .title{
        font-size: 100px;
      }
