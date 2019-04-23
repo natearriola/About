@@ -34,14 +34,15 @@ body {
 }
 
 body .header-flex {
-  height: 0;
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 0;
+  padding: 2rem;
+  margin: auto 0;
 }
 
 body .logo {
@@ -52,9 +53,6 @@ body .logo {
 
 body .logo img {
   height: 40px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   width: 50px;
 }
 
@@ -192,7 +190,8 @@ body .link-1:hover::after, body .link-2:hover::after, body .link-3:hover::after 
 }
 
 body .title {
-  font-family: big john;
+  font-family: panton;
+  font-weight: bold;
   color: #0a7198;
   text-align: center;
   font-size: 2.5rem;
@@ -219,7 +218,7 @@ body .img-header {
 }
 
 body .img-header img {
-  max-width: 80%;
+  max-width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -293,6 +292,8 @@ body footer .copy {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-family: panton;
+  font-weight: normal;
   color: #1a1a1a;
 }
 
@@ -313,14 +314,11 @@ body footer .pgnum span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     width: 100%;
   }
   body .header-flex {
-    height: 0;
-    padding: 3rem;
+    height: 5vh;
+    padding: 1rem;
   }
   body .title {
     font-size: 48px;
@@ -339,20 +337,14 @@ body footer .pgnum span {
     overflow-x: hidden;
   }
   body .header-flex {
-    height: 0;
-    padding: 3rem;
+    height: 5vh;
+    padding: 2rem;
   }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  body .img-header img {
-    max-width: 60%;
   }
   body .title {
     font-size: 3.5rem;
@@ -370,22 +362,11 @@ body footer .pgnum span {
   body {
     overflow-x: hidden;
   }
-  body .header-flex {
-    height: 0;
-    padding: 3rem;
-  }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
-    padding: 0;
   }
   body .menu li {
     font-size: 16px;
@@ -431,25 +412,22 @@ body footer .pgnum span {
     line-height: 0;
   }
   body footer {
-    padding: 2rem;
+    font-size: 16px;
+    padding-right: 2rem;
+  }
+  body footer .pgnum {
+    padding-left: 2rem;
   }
 }
 
 @media screen and (min-device-width: 1600px) and (max-device-width: 1920px) {
   body .header-flex {
-    height: 0;
     padding: 3rem;
   }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
   }
   body .menu li {
@@ -517,28 +495,23 @@ body footer .pgnum span {
     line-height: 0;
   }
   body footer {
-    padding: 2rem;
+    font-size: 16px;
+    padding-right: 3rem;
   }
   body footer .pgnum {
     font-size: 24px;
+    padding-left: 3rem;
   }
 }
 
 @media screen and (min-device-width: 2560px) and (-webkit-min-device-pixel-ratio: 1) {
   body .header-flex {
-    height: 0;
-    padding: 3rem;
+    padding: 4rem;
   }
   body .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
   }
   body .menu li {
@@ -559,8 +532,8 @@ body footer .pgnum span {
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: 100vh;
-        grid-template-rows: 100vh;
+    -ms-grid-rows: 80vh;
+        grid-template-rows: 80vh;
   }
   body .img-header {
     display: -webkit-box;
@@ -606,7 +579,12 @@ body footer .pgnum span {
     line-height: 0;
   }
   body footer {
-    padding: 2rem;
+    font-size: 16px;
+    padding-right: 5rem;
+  }
+  body footer .pgnum {
+    font-size: 24px;
+    padding-left: 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -35,20 +35,21 @@ body {
   padding: 0;
 
   .header-flex {
-    height: 0;
-    padding: 2rem;
     display: flex;
     align-items: center;
+    height: 0;
+    padding: 2rem;
+    margin: auto 0;
+    
   }
 
   .logo {
-    
     flex-grow: 1;
   }
 
   .logo img {
     height: 40px;
-align-self: center;
+    
     width: 50px;
   }
 
@@ -181,7 +182,8 @@ align-self: center;
  */
 
   .title {
-    font-family: big john;
+    font-family: panton;
+    font-weight: bold;
     color: map-get($colors, blue);
     text-align: center;
     font-size: 2.5rem;
@@ -198,7 +200,7 @@ align-self: center;
    
    
     img {
-      max-width: 80%;
+      max-width: 100%;
       align-self: center;
      
     }
@@ -260,6 +262,8 @@ align-self: center;
       padding: 1rem;
       .copy{
         flex-grow: 1;
+        font-family: panton;
+        font-weight: normal;
         color: map-get($colors, offblack);
       }
 
@@ -282,16 +286,13 @@ align-self: center;
     overflow-x: hidden;
     .menu {
       display: flex;
-      justify-content: center;
       width: 100%;
       
     }
 
-    
-
     .header-flex {
-      height: 0;
-      padding: 3rem;
+      height: 5vh;
+  padding: 1rem;
     }
 
     .title{
@@ -313,24 +314,14 @@ align-self: center;
   body {
     
     overflow-x: hidden;
-    .header-flex {
-      height: 0;
-      padding: 3rem;
+    .header-flex{
+      height: 5vh;
+      padding: 2rem;
     }
-   
-    .menu {
-      display: flex;
-
-      width: 100%;
-      justify-content: center;
-     
-    }
-
-    .img-header{
-      img{
-        max-width: 60%
-      }
-    }
+     .menu {
+       display: flex;
+       width: 100%;
+     }
 
     .title {
       font-size: 3.5rem;
@@ -350,17 +341,12 @@ align-self: center;
   body {
     overflow-x: hidden;
     
-    .header-flex {
-    height: 0;
-    padding: 3rem;
-    }
+   
 
     .menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: flex; 
       width: 100%;
-      padding: 0;
+     
       
     }
 
@@ -406,23 +392,30 @@ align-self: center;
       }
     }
 
-    footer{
-     padding: 2rem;
-    }
+
+   footer {
+     font-size: 16px;
+      padding-right: 2rem;
+       
+    
+        .pgnum{
+        
+          padding-left: 2rem;
+    
+        }
+      }
+   
   }
 }
 
 @media screen and(min-device-width: 1600px) and (max-device-width: 1920px) {
   body {
-    .header-flex {
-     height: 0;
-     padding: 3rem;
+   
+    .header-flex{
+      padding: 3rem;
     }
-
     .menu {
       display: flex;
-      justify-content: center;
-      align-items: center;
       width: 100%;
       
     }
@@ -477,13 +470,18 @@ align-self: center;
       }
     }
 
-    footer{
-     padding: 2rem;
-
-     .pgnum{
-      font-size: 24px;
-     }
-    }
+    footer {
+      font-size: 16px;
+       padding-right: 3rem;
+        
+     
+         .pgnum{
+         font-size: 24px;
+           padding-left: 3rem;
+     
+         }
+       }
+    
   }
 }
 
@@ -493,14 +491,12 @@ align-self: center;
 
   body{
     .header-flex {
-      height: 0;
-      padding: 3rem;
+    
+      padding: 4rem;
      }
  
      .menu {
        display: flex;
-       justify-content: center;
-       align-items: center;
        width: 100%;
        
      }
@@ -523,7 +519,7 @@ align-self: center;
      .grid{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
-       grid-template-rows: 100vh;
+       grid-template-rows: 80vh;
        
        
      }
@@ -554,8 +550,16 @@ align-self: center;
        }
      }
  
-     footer{
-      padding: 2rem;
-     }
+     footer {
+      font-size: 16px;
+       padding-right: 5rem;
+        
+     
+         .pgnum{
+         font-size: 24px;
+           padding-left: 5rem;
+     
+         }
+       }
   }
-}
+  }
