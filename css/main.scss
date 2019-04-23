@@ -26,6 +26,21 @@ $colors: (
   font-style: normal;
 }
 
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton.woff2") format("woff2"),
+    url("/fonts/panton.WOFF") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "panton";
+  src: url("/fonts/panton-light.woff2") format("woff2"),
+    url("/fonts/panton-light.WOFF") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   padding: 0;
   margin: auto 0;
@@ -91,8 +106,7 @@ body {
   .menu li {
     padding: 10px;
     list-style-type: none;
-    font-family: raleway;
-    font-weight: 400;
+  
     font-size: 12px;
   }
   .nav-container {
@@ -125,8 +139,8 @@ body {
     list-style-type: none;
     padding: 10px 0;
     font-size: 30px;
-    font-family: raleway;
-    font-weight: 700;
+    font-family: panton;
+    font-weight: normal;
   }
 
   .nav li a {
@@ -141,7 +155,8 @@ body {
   .menu li a {
     color: black;
     text-decoration: none;
-
+    font-family: panton;
+    font-weight: normal;
     text-align: center;
     width: 100vh;
   }
@@ -208,18 +223,19 @@ body {
 
   .content-container {
     padding: 1rem;
-    span {
-      font-size: 24px;
-      color: map-get($colors, blue);
-    }
+   span{
+     color:map-get($colors,blue);
+     font-family: panton;
+   }
     p {
-      text-indent: 5%;
+      text-indent: 3%;
       text-align: left;
       font-size: 12px;
       font-family: raleway;
       line-height: 200%;
       font-size: 400;
       padding: 0.5rem 1rem 1rem 1rem;
+      color: map-get($colors, offblack);
     }
     .birthdate {
       padding: 0 1rem 0rem 1rem;
@@ -233,7 +249,7 @@ body {
       justify-content: center;
     }
     .button {
-      font-family: raleway;
+      font-family: panton;
       color: #fff;
       font-size: 12px;
       text-decoration: none;
