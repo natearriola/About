@@ -30,6 +30,12 @@ Header(nav,logo,links,etc)
   padding: 1rem;
 }
 
+@media (min-width: 1800px) {
+  .header-flex {
+    padding: 2rem;
+  }
+}
+
 .header-flex .logo {
   padding: 0;
   margin: 0;
@@ -137,7 +143,7 @@ Header(nav,logo,links,etc)
 NAV OVERLAY 
 */
 .nav-container {
-  background-color: #252625;
+  background-color: rgba(38, 37, 38, 0.9);
   width: 100%;
   height: 0;
   z-index: 5;
@@ -219,6 +225,18 @@ NAV OVERLAY
       align-self: center;
 }
 
+@media (min-width: 900px) {
+  .grid img {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid img {
+    max-width: 25%;
+  }
+}
+
 .grid .content-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -241,17 +259,35 @@ NAV OVERLAY
   text-align: center;
   font-family: "Playfair Display";
   font-weight: bold;
-  color: #f8edda;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 1800px) {
+  .grid .content-container h1 {
+    font-size: 4rem;
+  }
 }
 
 .grid .content-container .birthdate {
-  /*
-      color: #ADa586;
-      */
-  color: #252625;
+  color: #f8edda;
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  .grid .content-container .birthdate {
+    font-size: 16px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media (min-width: 1800px) {
+  .grid .content-container .birthdate {
+    font-size: 18px;
+  }
 }
 
 .grid .content-container .main-content {
@@ -261,6 +297,13 @@ NAV OVERLAY
   line-height: 200%;
   font-size: 12px;
   text-indent: 3%;
+}
+
+@media (min-width: 1200px) {
+  .grid .content-container .main-content {
+    font-size: 16px;
+    width: 70%;
+  }
 }
 
 .grid .content-container .main-content a {

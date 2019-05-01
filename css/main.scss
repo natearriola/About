@@ -56,8 +56,12 @@ Header(nav,logo,links,etc)
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+ padding: 1rem;
 
-  padding: 1rem;
+
+ @include for-big-desktop-up{
+   padding: 2rem;
+ }
   .logo {
     padding: 0;
     margin: 0;
@@ -154,7 +158,7 @@ NAV OVERLAY
 */
 
 .nav-container {
-  background-color: map-get($colors, secondary);
+  background-color: rgba(38,37,38,.9);
   width: 100%;
   height: 0;
   z-index: 5;
@@ -214,6 +218,13 @@ NAV OVERLAY
   img {
     max-width: 50%;
     align-self: center;
+
+    @include for-tablet-landscape-up{
+      max-width: 30%;
+    }
+    @include for-desktop-up{
+      max-width: 25%;
+    }
   }
 
   .content-container {
@@ -231,18 +242,30 @@ NAV OVERLAY
       text-align: center;
       font-family: "Playfair Display";
       font-weight: bold;
-      color: map-get($colors, extra);
+      color: map-get($colors, Secondary);
+      letter-spacing: 2px;
+
+      @include for-big-desktop-up{
+       font-size: 4rem;
+      }
+
 
     }
 
     .birthdate{
 
-      /*
-      color: #ADa586;
-      */
-      color:map-get($colors, secondary);
+      
+      color:map-get($colors, extra);
       align-self: flex-start;
       font-size: 12px;
+      @include for-desktop-up{
+        font-size: 16px;
+        align-self: center;
+        
+      }        
+      @include for-big-desktop-up{
+        font-size: 18px;
+      }
     }
     
     .main-content{
@@ -254,8 +277,16 @@ NAV OVERLAY
       font-size: 12px;
       text-indent: 3%;
 
+      @include for-desktop-up{
+        font-size: 16px;
+        width: 70%;
+      }
+
+      
+
       a{
         color: map-get($colors, secondary);
+        
       }
     }
 
