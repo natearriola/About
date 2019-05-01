@@ -209,7 +209,8 @@ NAV OVERLAY
 .grid {
   display: flex;
   justify-content: center;
-
+  flex-direction: column;
+  
   img {
     max-width: 50%;
     align-self: center;
@@ -218,15 +219,87 @@ NAV OVERLAY
   .content-container {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    padding: 1rem;
+    font-family: 'raleway';
+    justify-content: center;
+    align-items: center;
+
+
+    
 
     h1 {
       text-align: center;
+      font-family: "Playfair Display";
+      font-weight: bold;
+      color: map-get($colors, extra);
+
+    }
+
+    .birthdate{
+
+      /*
+      color: #ADa586;
+      */
+      color:map-get($colors, secondary);
+      align-self: flex-start;
+      font-size: 12px;
+    }
+    
+    .main-content{
+      
+      color: map-get($colors, secondary);
+      padding-bottom: 1rem;
+      color: white;
+      line-height: 200%;
+      font-size: 12px;
+      text-indent: 3%;
+
+      a{
+        color: map-get($colors, secondary);
+      }
     }
 
     .button-container {
       display: flex;
       justify-content: center;
+      background-color: map-get($colors, accent);
+     align-items: center;
+    
+     border-radius: 5%;
+     transition: all 0.3s ease;
+        box-shadow: inset 0 0 0 99999px rgba(255, 255, 255, 0.1);
+        padding: 1rem 2rem 1rem 2rem;
+     
+      
+      
+
+      a{
+        text-decoration: none;
+        color: map-get($colors, extra);
+        font-family: 'Playfair Display';
+        font-size: 12px;
+        font-style: italic;
+        text-align: center;
+        
+        
+        
+       
+      }
     }
+
+    .button-container:hover{
+        box-shadow: none;
   }
+
+  
+}
+}
+
+footer{
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  font-size: 12px;
+  color: map-get($colors, extra);
 }
